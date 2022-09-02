@@ -1,6 +1,5 @@
 import React from 'react'
-import img from '../images/image.png'
-import Footer from './Footer'
+
 
 const WelcomePage = () => {
   return (
