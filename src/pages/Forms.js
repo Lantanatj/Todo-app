@@ -14,7 +14,7 @@ function Forms({data,id}) {
     const data = {title, body}
     console.log(data);
 
-    fetch(`http://localhost:5000/todo/${id}`, {
+    fetch(`https://node-todo-app45.herokuapp.com/todo/${id}`, {
       method: "PATCH",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(data)

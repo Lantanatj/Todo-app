@@ -13,7 +13,7 @@ const [body, setBody] = useState("")
     const data = {title, body}
     console.log(data);
 
-    fetch("http://localhost:5000/todo", {
+    fetch("https://node-todo-app45.herokuapp.com/todo/", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(data)

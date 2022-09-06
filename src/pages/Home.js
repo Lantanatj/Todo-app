@@ -7,7 +7,7 @@ const Home = () => {
     const [todo, setTodo] = useState(null)
 
     const getdata = ()=>{
-        fetch("http://localhost:5000/todo/")
+        fetch("https://node-todo-app45.herokuapp.com/todo/")
         .then((res) => res.json())
         .then((data)=> setTodo(data.todos))
       }

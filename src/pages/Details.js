@@ -13,7 +13,7 @@ const Details = () => {
     const getdata = ()=>{
         // fetch(`http://localhost:5000/todo/${id}`)
 
-        fetch(`http://localhost:5000/todo/${id}/`)
+        fetch(`https://node-todo-app45.herokuapp.com/todo/${id}/`)
         .then((res) => res.json())
         .then((data)=> setTodo(data))
       }
@@ -25,7 +25,7 @@ const Details = () => {
       }, [])
 
     const getDelet = ()=>{
-        fetch(`http://localhost:5000/todo/${id}`, {
+        fetch(`https://node-todo-app45.herokuapp.com/todo/${id}`, {
             method: "DELETE",
         }).then(()=> navigate("/tasks"))
     }
