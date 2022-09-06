@@ -7,11 +7,12 @@ import Details from './pages/Details';
 import Navbar from './pages/Navbar';
 import Create from './pages/Create'
 
+
 function App() {
 
 
   return (
-    <div>
+    <div className='appPage'>
       <BrowserRouter>
       <Navbar /><br/><br/>
       <Routes>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/create" element={<Create/>}/>
       </Routes>
     </BrowserRouter>
+    
     </div>
     
   )

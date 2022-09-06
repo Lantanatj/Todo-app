@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
-import Footer from './Footer'
+
 
 
 const Home = () => {
@@ -20,10 +20,10 @@ const Home = () => {
   
 
   return (
-    <div >
+    <div className='todo_body'>
         <div className='mappedItem'>
             {todo &&  <> {todo.map((data)=>(
-                <div className='todo_body' key={data._id}>
+                <div  key={data._id}>
                     <h1>{data.title}</h1>
                     <p>{data.body}</p>
 
@@ -33,7 +33,7 @@ const Home = () => {
                 </div>
             ))}</>}
         </div>
-        <Footer/>
+        
     </div>
   )
 }

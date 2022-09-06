@@ -32,11 +32,10 @@ const [body, setBody] = useState("")
         </div>
 
         <div>
-          <textarea name="" id="" cols="30" rows="10" value={body} onChange={(e)=> setBody(e.target.value)}>
-            Enter your todo
+          <textarea name="" id="" placeholder='task content' cols="30" rows="10" value={body} onChange={(e)=> setBody(e.target.value)}>
           </textarea>
           <br/>
-          <button onClick={handleSubmit}>submit</button>
+          <button onClick={handleSubmit} className="createPage_button">submit</button>
         </div>
 
       </form>

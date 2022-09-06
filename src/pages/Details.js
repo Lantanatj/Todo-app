@@ -21,8 +21,8 @@ const Details = () => {
       useEffect(()=>{
             getdata()
   
-        return()=>{}
-      }, [])
+        
+      }, )
 
     const getDelet = ()=>{
         fetch(`https://node-todo-app45.herokuapp.com/todo/${id}`, {
