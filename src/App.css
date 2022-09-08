@@ -14,6 +14,13 @@ body {
   background-color: rgb(255, 255, 255);
 
 }
+.loaders {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #fff;
+}
 
 .todo_body {
   margin: auto;
